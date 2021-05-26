@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(arr){
+                let answer=arr;
+                let total = 0;
+                for(let i of arr)
+                    total += i; // 배열 원소의 합
+                for(let i=0; i<8; i++)
+                {
+                    for(let j=i+1; j<9; j++)
+                    {
+                        if((total-(answer[i]+answer[j]))==100){ // 총 원소의 합 - 두 원소의 합 이 100이라면
+                            answer.splice(j, 1); // splice(시작인덱스, 지울 인덱스 개수, 넣을 원소)
+                            answer.splice(i, 1); // 두원소를 배열에서 지우고
+                        }
+                    }
+                }
+                return answer; // 답 반환
+            }
+            
+            let arr=[20, 7, 23, 19, 10, 15, 25, 8, 13];
+            console.log(solution(arr));
+        </script>
+    </body>
+</html>

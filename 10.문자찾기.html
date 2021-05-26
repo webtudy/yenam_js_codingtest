@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(s,c)
+            {
+                let answer = 0;
+                for(let x in s) // 반복문으로 s의 문자들 탐색
+                {
+                    if(x == c) // s의 문자가 c와 같다면
+                    answer++; // 카운트
+                }
+                return answer; 
+            }
+
+            let str = "COMPUTERPROGRAMMING";
+            let char = "R";
+            console.log(solution(str, char));
+        </script>
+    </body>
+</html>
