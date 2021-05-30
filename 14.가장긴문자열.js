@@ -9,5 +9,5 @@ function solution(s){
     }
     return answer;
 }
-let str=["teacher", "time", "student", "beautiful", "good"];
+let str=["teacher", "time", "student", "good"];
 console.log(solution(str));
