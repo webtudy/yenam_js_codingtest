@@ -19,5 +19,18 @@ function solution(n, m){
     DFS(0);
     return answer;
 }
+function awef(we){
+    var arr = [[12, 'AAA'], [18, 'CCC'],[12, 'BBB'],[18, 'DDD'], ]; 
+    arr.sort(function(a,b) { return charAtCode.[1]-charAtCode.b[1] });
 
-console.log(solution(3, 2));
+    console.log(arr);
+
+
+}
+//[["ICN", "SFO"], ["ICN", "ATL"], ["SFO", "ATL"], 
+// ["ATL", "ICN"], ["ATL","SFO"], ["SFO","ICN"]]
+// ATL 2 2
+// ICN 2 2 
+// SFO 2 2
+
+awef();

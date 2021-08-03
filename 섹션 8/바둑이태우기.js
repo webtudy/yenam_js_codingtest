@@ -15,10 +15,9 @@ function solution(limit, dog, weight){
                 temp.push(weight[i]);
                 sum += weight[i];
                 }
-            }
-            console.log(sum, max, limit);
-            if(max < sum && sum < limit)
-            max = sum;    
+            } //체크리스트 확인후 총 강아지 무게 확인
+            if(max < sum && sum < limit) // 무게가 이전 최댓값보다 크고 한계값보다 작다면
+            max = sum; //갱신
         }
         else{ // 아니라면
             check[depth] = 1; // 현재개 담을지말지 정한후
