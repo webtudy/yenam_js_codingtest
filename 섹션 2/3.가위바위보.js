@@ -9,7 +9,8 @@ function solution(a, b){
         else if(a[x] == 2 && b[x] == 1)
             answer += "A";
         else if(a[x] == 3 && b[x] == 2)
-            answer += "A";
+            answer += "A
+            ";
         else
             answer += "B";
     }

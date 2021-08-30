@@ -20,8 +20,8 @@ function solution(n, m){
     return answer;
 }
 function awef(we){
-    var arr = [[12, 'AAA'], [18, 'CCC'],[12, 'BBB'],[18, 'DDD'], ]; 
-    arr.sort(function(a,b) { return charAtCode.[1]-charAtCode.b[1] });
+    var arr = [[12, 'AAA'], [18, 'CCC'],[12, 'BBB'],[18, 'DDD'] ]; 
+    arr.sort(function(a,b) { return a[1].charAtCode()-charAtCode.b[1] });
 
     console.log(arr);
 

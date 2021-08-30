@@ -8,16 +8,17 @@ function complete(arr){
 
 function solution(n, computers) {
     var answer = 0;
-    let ch = Array.from({ length: n }, (v, i) => 0);
+    let ch = Array.from({ length: n }, (v, i) => 0); // [1, 1, 0]
     let que = [];
     while(complete(ch) != n){
         console.log(1, que);
-        que.push(ch.indexOf(0));
-        while(que.length){
+        que.push(ch.indexOf(0)); // 0
+
+        while(que.length){ // [ 1 ]
             console.log(2, que);
             let node = que.shift();
             ch[node] = 1;
-            for(let i = 0; i < n; i++){
+            for(let i = 0; i < n; i++){ // [  ]
                 if(i == node) continue;
                 else if(computers[node][i] == 1){
                     que.push(i);
@@ -33,5 +34,5 @@ function solution(n, computers) {
 }
 console.log(solution(3,	[[1, 1, 0], [1, 1, 1], [0, 1, 1]]));
 //[[1, 1, 0],
-// [1, 1, 0], 
+// [0, 1, 0], 
 // [0, 0, 1]]
